@@ -6,7 +6,7 @@
 
 ## 目录
 
-1. 介绍
+1. [介绍](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/introduction.md)
 2. 面向资源设计
 3. 资源名称
 4. 标准方法
