@@ -26,18 +26,18 @@ REST API被建模为可单独寻址的资源集合（API的名词）。资源通
 
 本设计指南建议在设计面向资源的API时采取以下步骤（更多详细信息将在下面的特定部分中介绍）：
 
-	* 确定API提供什么类型的资源。
-	* 确定资源之间的关系。
-	* 根据类型和关系确定资源命名方案。
-	* 确定资源模式。
-	* 给资源设计最少的方法。
+* 确定API提供什么类型的资源。
+* 确定资源之间的关系。
+* 根据类型和关系确定资源命名方案。
+* 确定资源模式。
+* 给资源设计最少的方法。
 
 ## 资源
 
 面向资源的 API 通常被建模为资源层次结构，其中每个节点又可能是简单资源或资源集合。为了方便起见，它们通常分别称为资源和集合。
 
-	* 一个集合包含一系列相同类型的资源。例如，一个用户拥有一个联系人的集合。
-	* 一个资源拥有一些状态，可能会有若干子资源。每个子资源可以是一个简单资源或者一个资源集合。
+* 一个集合包含一系列相同类型的资源。例如，一个用户拥有一个联系人的集合。
+* 一个资源拥有一些状态，可能会有若干子资源。每个子资源可以是一个简单资源或者一个资源集合。
 
 例如，Gmail API 有用户集合，每个用户都有消息集合，消息列表集合，标签集合，一个配置文件资源和几个设置资源。
 
@@ -57,22 +57,22 @@ REST API被建模为可单独寻址的资源集合（API的名词）。资源通
 
 Gmail API服务实现了Gmail API，并提供了大多数Gmail功能。 它有以下资源模型：
 
-	* Gmail API 服务: `gmail.googleapis.com`
-	* 用户集合: `users/*`. 每个用户都有以下资源.
-		* 消息集合：`users/*/messages/*`。
-		* 消息列表集合：`users/*/threads/*`。
-		* 标签集合：`users/*/labels/*`。
-		* 变更历史记录的集合：`users/*/history/*`。
-		* 表示用户配置文件的资源：`users/*/profile`。
-		* 表示用户设置的资源：`users/*/settings`。
+* Gmail API 服务: `gmail.googleapis.com`
+* 用户集合: `users/*`. 每个用户都有以下资源.
+    * 消息集合：`users/*/messages/*`。
+    * 消息列表集合：`users/*/threads/*`。
+    * 标签集合：`users/*/labels/*`。
+    * 变更历史记录的集合：`users/*/history/*`。
+    * 表示用户配置文件的资源：`users/*/profile`。
+    * 表示用户设置的资源：`users/*/settings`。
 
 ### Google Cloud Pub/Sub API
 
 `pubsub.googleapis.com` 服务实现了 Google Cloud Pub/Sub API，其中定义了以下资源模型：
 
-	* API服务：`pubsub.googleapis.com`
-	* 主题集合：`projects/*/topics/*`。
-	* 订阅集合：`projects/*/subscriptions/*`。
+* API服务：`pubsub.googleapis.com`
+* 主题集合：`projects/*/topics/*`。
+* 订阅集合：`projects/*/subscriptions/*`。
 
 注意：Pub/Sub API其他的实现可能会选择不同的资源命名方案。
 
