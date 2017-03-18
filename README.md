@@ -8,7 +8,7 @@
 
 1. [介绍](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/introduction.md)
 2. [面向资源设计](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-oriented-design.md)
-3. 资源名称
+3. [资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md)
 4. 标准方法
 5. 自定义方法
 6. 标准字段
