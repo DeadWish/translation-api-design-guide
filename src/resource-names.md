@@ -94,7 +94,7 @@ Google API必须使用字符串表示资源名称，除非向后兼容性是一�
 对于资源定义，第一个字段应该是资源名称的字符串，它应该称为 `name`。其他与名称相关的字段应该可以避免混淆，例如`display_name`，`first_name`，`last_name`，`full_name`。
 
 示例：
-```Javascript
+```proto3
 service LibraryService {
   rpc GetBook(GetBookRequest) returns (Book) {
     option (google.api.http) = {
