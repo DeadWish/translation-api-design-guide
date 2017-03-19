@@ -1,12 +1,12 @@
 # 资源名称
 
 > 目录
-[完整资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#完整资源名称)
-[相对资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#相对资源名称)
-[资源 ID](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源id)
-[集合 ID](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#集合id)
-[资源名称 vs URL](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源名称-vs-url)
-[字符串的资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#字符串的资源名称)
+* [完整资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#完整资源名称)
+* [相对资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#相对资源名称)
+* [资源 ID](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源id)
+* [集合 ID](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#集合id)
+* [资源名称 vs URL](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源名称-vs-url)
+* [字符串的资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#字符串的资源名称)
 
 在面向资源的API中，资源是命名实体，资源名称是其标识符。每个资源必须有自己的唯一资源名称。资源名称由资源本身的ID，任何父资源的ID及其API服务名称组成。资源名称由资源本身的ID，任何父资源的ID及其API服务名称组成。下面我们将着眼于资源ID和如何构建资源名称。
 
