@@ -1,11 +1,17 @@
 # 资源名称
 
 > 目录
+
 > [完整资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#完整资源名称)
+
 > [相对资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#相对资源名称)
+
 > [资源 ID](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源id)
+
 > [集合 ID](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#集合id)
+
 > [资源名称 vs URL](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源名称-vs-url)
+
 > [字符串的资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#字符串的资源名称)
 
 在面向资源的API中，资源是命名实体，资源名称是其标识符。每个资源必须有自己的唯一资源名称。资源名称由资源本身的ID，任何父资源的ID及其API服务名称组成。资源名称由资源本身的ID，任何父资源的ID及其API服务名称组成。下面我们将着眼于资源ID和如何构建资源名称。
@@ -94,7 +100,7 @@ Google API必须使用字符串表示资源名称，除非向后兼容性是一�
 对于资源定义，第一个字段应该是资源名称的字符串，它应该称为 `name`。其他与名称相关的字段应该可以避免混淆，例如`display_name`，`first_name`，`last_name`，`full_name`。
 
 示例：
-```Java
+```Javascript
 service LibraryService {
   rpc GetBook(GetBookRequest) returns (Book) {
     option (google.api.http) = {
