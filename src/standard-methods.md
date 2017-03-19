@@ -1,11 +1,11 @@
 # 标准方法
 
 > 目录
-> * [列表](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#完整资源名称)
-> * [获取](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#相对资源名称)
-> * [创建](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源id)
-> * [更新](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#集合id)
-> * [删除](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md#资源名称-vs-url)
+> * [列表](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#列表-list)
+> * [获取](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#获取-get)
+> * [创建](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#创建-create)
+> * [更新](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#更新-update)
+> * [删除](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#删除-delete)
 
 本章定义了标准方法的概念，即`List`，`Get`，`Create`，`Update` 和 `Delete`。定义标准方法的原因是许多跨度广泛的 API 方法有非常相似的语义。通过将这些类似的 API 融合到标准方法中，我们可以显著地降低复杂性并提高一致性。对于 Google API 仓库中的 API 方法，其中70％以上是标准方法，这使得它们更容易被学习和使用。
 
@@ -48,7 +48,6 @@ HTTP 映射：
 * 响应正文应包含资源列表以及可选元数据。
 
 ```proto3
-
 // 列出给定货架上的所有图书。
 rpc ListBooks(ListBooksRequest) returns (ListBooksResponse) {
   // 列出到 HTTP GET 的方法映射。
@@ -77,7 +76,6 @@ message ListBooksResponse {
   // 为了取回下一页结果的属性, 如果列表中没有更多的结果了将返回空。
   string next_page_token = 2;
 }
-
 ```
 ## 获取 `Get`
 
@@ -92,7 +90,6 @@ message ListBooksResponse {
 * 返回的资源应映射到整个响应体。
 
 ```proto3
-
 // 获取特定的书籍.
 rpc GetBook(GetBookRequest) returns (Book) {
   // Get 方法对应 HTTP GET。 资源名被映射到 URL 上。 没有请求体。
@@ -106,7 +103,6 @@ message GetBookRequest {
   // 该字段将包含所请求资源的名称，例如 `"shelves/shelf1/books/book2"`
   string name = 1;
 }
-
 ```
 
 
