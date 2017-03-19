@@ -2,7 +2,7 @@
 
 ## 简介
 
-翻译[API Design Guide](https://cloud.google.com/apis/design/)
+翻译 [Google Cloud Platform API Design Guide](https://cloud.google.com/apis/design/)
 
 ## 目录
 
@@ -16,10 +16,10 @@
 8. 命名约定
 9. 设计模式
 10. 文档
-11. 使用proto3
+11. 使用 `proto3`
 12. 版本控制
 13. 兼容性
 14. 目录结构
 15. 文件结构
-16. HTTP方法
+16. `HTTP` 方法
 17. 词汇表
