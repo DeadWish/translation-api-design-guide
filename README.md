@@ -11,7 +11,7 @@
 3. [资源名称](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/resource-names.md)
 4. [标准方法](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md)
 5. 自定义方法
-6. 标准字段
+6. [标准字段](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-fields.md)
 7. 错误
 8. 命名约定
 9. 设计模式
