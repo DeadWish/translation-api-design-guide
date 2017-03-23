@@ -84,7 +84,7 @@ rpc BatchGetEvents(BatchGetEventsRequest) returns (BatchGetEventsResponse) {
 方法名 | 自定义动词 | HTTP 动词 | 注意  
 ------- | ------- | ------- | ------- |
 `Cancel` 				| `:cancel`    | POST | 取消未完成的操作（构建，计算等） |
-`BatchGet<plural noun>` | `:batchGet`  | GET  | 批量获取多个资源（详情请查看[列表的描述]（https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#列表-list））|
+`BatchGet<plural noun>` | `:batchGet`  | GET  | 批量获取多个资源（详情请查看[列表的描述](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md#列表-list)|
 `Move` 					| `:move`      | POST | 将资源从一个父项移动到另一个父项。 |
 `Search` 				| `:search`    | GET  | 用于获取不符合 `List` 语义的数据的 `List` 的替代方法。 |
 `Undelete`		       	| `:undelete`  | POST | 恢复以前删除的资源。推荐保留期为30天。 |
