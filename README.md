@@ -12,7 +12,7 @@
 4. [标准方法](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-methods.md)
 5. [自定义方法](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/custom-methods.md)
 6. [标准字段](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/standard-fields.md)
-7. 错误
+7. [错误](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/errors.md)
 8. 命名约定
 9. 设计模式
 10. 文档
