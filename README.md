@@ -16,7 +16,7 @@
 8. 命名约定
 9. 设计模式
 10. 文档
-11. [使用 `proto3`](https://developers.google.com/protocol-buffers/)
+11. [使用 `proto3`](https://github.com/DeadWish/translation-api-design-guide/blob/master/src/using-proto3.md)
 12. 版本控制
 13. 兼容性
 14. 目录结构
