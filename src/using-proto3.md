@@ -15,4 +15,4 @@
 
 删除这些功能的原因是使 API 设计更简单，更稳定，更高效。例如，在记录消息之前，通常需要过滤某些字段，例如删除敏感信息。如果需要这些字段则是不可能的。
 
-详情请查看 [Protocol Buffers](https://developers.google.com/protocol-buffers/)
+详情请查看 [Protocol Buffers](https://developers.google.com/protocol-buffers/)。
